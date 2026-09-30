@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CrocCream | Crocância que conquista</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <span>Croc</span><strong>Cream</strong>
+        </div>
+
+        <nav class="navbar">
+            <a href="#inicio">Início</a>
+            <a href="#sabores">Sabores</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#galeria">Galeria</a>
+        </nav>
+
+        <button class="header-button" onclick="scrollToSabores()">
+            Conheça os sabores
+        </button>
+    </header>
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <p class="small-title">UMA EXPERIÊNCIA DELICIOSA</p>
+
+                <h1>
+                    Crocância por fora,
+                    <span>cremosidade por dentro.</span>
+                </h1>
+
+                <p class="hero-text">
+                    Mini croissants crocantes recheados com cremes irresistíveis
+                    para transformar qualquer momento em uma experiência especial.
+                </p>
+
+                <div class="hero-buttons">
+                    <button class="primary-button" onclick="scrollToSabores()">
+                        Descubra os sabores
+                    </button>
+
+                    <a href="#sobre" class="secondary-button">
+                        Conheça a CrocCream
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <div class="gold-circle"></div>
+
+                <div class="product-card">
+                    <div class="croissant">
+                        <div class="croissant-line line1"></div>
+                        <div class="croissant-line line2"></div>
+                        <div class="croissant-line line3"></div>
+                        <div class="croissant-line line4"></div>
+                    </div>
+
+                    <div class="cream-detail"></div>
+                </div>
+
+                <div class="floating-card">
+                    <span>♡</span>
+                    <div>
+                        <strong>Feito para<br>amar</strong>
+                        <small>Crocante + Cremoso</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="flavors" id="sabores">
+
+            <div class="section-title">
+
+                <p>ESCOLHA O SEU FAVORITO</p>
+
+                <h2>
+                    Sabores que fazem
+                    <span>você querer mais</span>
+                </h2>
+
+                <div class="title-line"></div>
+
+            </div>
+
+            <div class="flavor-grid">
+
+                <article class="flavor-card chocolate">
+
+                    <div class="flavor-image">
+                        <div class="mini-croissant">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="flavor-info">
+                        <span class="flavor-number">01</span>
+                        <h3>Chocolate</h3>
+                        <p>Recheio cremoso de chocolate para os apaixonados por doce.</p>
+                        <button onclick="showFlavor('Chocolate')">
+                            Quero experimentar →
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="flavor-card ninho">
+
+                    <div class="flavor-image">
+                        <div class="mini-croissant">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="flavor-info">
+                        <span class="flavor-number">02</span>
+                        <h3>Ninho</h3>
+                        <p>Um creme suave e irresistível com aquele sabor especial.</p>
+                        <button onclick="showFlavor('Ninho')">
+                            Quero experimentar →
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="flavor-card morango">
+
+                    <div class="flavor-image">
+                        <div class="mini-croissant">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="flavor-info">
+                        <span class="flavor-number">03</span>
+                        <h3>Morango</h3>
+                        <p>O equilíbrio perfeito entre o doce e o sabor marcante da fruta.</p>
+                        <button onclick="showFlavor('Morango')">
+                            Quero experimentar →
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="flavor-card caramelo">
+
+                    <div class="flavor-image">
+                        <div class="mini-croissant">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="flavor-info">
+                        <span class="flavor-number">04</span>
+                        <h3>Caramelo</h3>
+                        <p>Uma combinação doce, cremosa e cheia de personalidade.</p>
+                        <button onclick="showFlavor('Caramelo')">
+                            Quero experimentar →
+                        </button>
+                    </div>
+
+                </article>
+
+
+                <article class="flavor-card pistache">
+
+                    <div class="flavor-image">
+                        <div class="mini-croissant">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="flavor-info">
+                        <span class="flavor-number">05</span>
+                        <h3>Pistache</h3>
+                        <p>Um sabor sofisticado para quem gosta de experimentar algo diferente.</p>
+                        <button onclick="showFlavor('Pistache')">
+                            Quero experimentar →
+                        </button>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <section class="about" id="sobre">
+
+            <div class="about-image">
+
+                <div class="about-decoration"></div>
+
+                <div class="about-product">
+                    <div class="croissant big">
+                        <div class="croissant-line line1"></div>
+                        <div class="croissant-line line2"></div>
+                        <div class="croissant-line line3"></div>
+                        <div class="croissant-line line4"></div>
+                    </div>
+                </div>
+
+                <span class="about-label">CROC<br>CREAM</span>
+
+            </div>
+
+
+            <div class="about-content">
+
+                <p class="small-title">SOBRE A CROC CREAM</p>
+
+                <h2>
+                    Pequeno no tamanho.
+                    <span>Gigante no sabor.</span>
+                </h2>
+
+                <p>
+                    O CrocCream nasceu para transformar um simples momento
+                    em uma experiência deliciosa. Nossos mini croissants
+                    combinam uma massa crocante por fora com um recheio
+                    cremoso por dentro.
+                </p>
+
+                <p>
+                    São diferentes sabores pensados para quem ama doces,
+                    gosta de novidades e procura uma sobremesa prática,
+                    delicada e cheia de sabor.
+                </p>
+
+                <div class="features">
+
+                    <div class="feature">
+                        <span>✦</span>
+                        <div>
+                            <strong>Crocante</strong>
+                            <p>Textura irresistível</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span>♡</span>
+                        <div>
+                            <strong>Cremoso</strong>
+                            <p>Recheios especiais</p>
+                        </div>
+                    </div>
+
+                    <div class="feature">
+                        <span>✧</span>
+                        <div>
+                            <strong>Delicioso</strong>
+                            <p>Sabores para todos</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="gallery" id="galeria">
+
+            <div class="section-title">
+
+                <p>O UNIVERSO CROC CREAM</p>
+
+                <h2>
+                    Uma marca feita para
+                    <span>ser apreciada</span>
+                </h2>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item large">
+                    <div class="gallery-placeholder">
+                        <span>FOTO PRINCIPAL</span>
+                        <p>CrocCream inteiro</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-placeholder detail">
+                        <span>DETALHE</span>
+                        <p>Recheio cremoso</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-placeholder lifestyle">
+                        <span>LIFESTYLE</span>
+                        <p>Um momento CrocCream</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <div class="gallery-placeholder packaging">
+                        <span>EMBALAGEM</span>
+                        <p>Identidade CrocCream</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="cta">
+
+            <div class="cta-decoration"></div>
+
+            <div class="cta-content">
+
+                <p>SEU PRÓXIMO MOMENTO FAVORITO</p>
+
+                <h2>
+                    Qual CrocCream
+                    <span>é a sua cara?</span>
+                </h2>
+
+                <button onclick="scrollToSabores()" class="primary-button">
+                    Explorar sabores
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            <span>Croc</span><strong>Cream</strong>
+        </div>
+
+        <p>
+            Crocância por fora. Cremoso por dentro.
+        </p>
+
+        <div class="socials">
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+        </div>
+
+        <div class="copyright">
+            © 2026 CrocCream. Todos os direitos reservados.
+        </div>
+
+    </footer>
+
+
+    <div class="modal" id="flavorModal">
+
+        <div class="modal-content">
+
+            <button class="close-modal" onclick="closeModal()">×</button>
+
+            <span class="modal-icon">♡</span>
+
+            <p>VOCÊ ESCOLHEU</p>
+
+            <h2 id="modalFlavor">Chocolate</h2>
+
+            <span class="modal-line"></span>
+
+            <p>
+                Uma escolha deliciosa! O CrocCream
+                espera por você.
+            </p>
+
+            <button class="primary-button" onclick="closeModal()">
+                Fechar
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
